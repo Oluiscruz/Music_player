@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Numans&family=Signika+Negative:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+    font-family: 'numans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#000000, #9370db) ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #18181d;
+    width: 300px;
+    height: 490px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 12px black;
+    color: #ffff;
+}
+
+.container .box .box-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box {
+    text-align: center;
+}
+
+.container .box .box-title {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .box .box-img #musicName {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Karla", sans-serif;
+}
+
+.container .box .box-img #artist {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 8px;
+}
+
+.container .box .controls button {
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffff;
+    border-radius: 50%;
+    background-color: #474747;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.699);
+    border: 1px solid transparent;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.container .box .controls i {
+    font-size: 25px;
+    margin: 5px;
+    cursor: pointer;
+    color: #ffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.container .box .controls button:hover {
+    background-color: rgb(126, 126, 126);
+    border: 1px solid black;
+    color: #18181d;
+    transition: all 0.2s;
+    transform: scale(0.98);
+}
+
+.container .box .box-img #img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    margin: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.699);
+}
+
+.container .box .footer .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 10pt;
+}
+
+.container .box .footer .progress-bar {
+    height: 8px;
+    background: #000000;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.container .box .footer .progress-bar .progress {
+    height: 8px;
+    background-color: #9b9898;
+    border-radius: 8px;
+}
+
+@media (min-width:1024px){
+    .container{
+        width: 550px;
+        height: 550px;
+
+    }
+    .container .box .box-img #img {
+        width: 250px;
+        height: 250px;
+    }
+    .container .box .box-title {
+        font-size: 12pt;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .container .box .controls button {
+        font-size: 40px;
+    }
+    .container .box .controls i {
+        font-size: 30px;
+        padding: 10px;
+    }
+    .container .box .box-img #musicName {
+        font-size: 25px;
+
+    }
+    
+    .container .box .box-img #artist {
+        font-size: 12px;
+    }
+}
